@@ -143,7 +143,7 @@ JUCE_END_IGNORE_WARNINGS_MSVC
 
 //==============================================================================
 // DLL building settings on Windows
-#if JUCE_MSVC
+#if _WIN32
  #ifdef JUCE_DLL_BUILD
   #define JUCE_API __declspec (dllexport)
   #pragma warning (disable: 4251)
